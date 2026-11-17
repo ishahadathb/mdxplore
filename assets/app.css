@@ -384,8 +384,10 @@ html[data-theme="dark"] .ico-moon { display: block; }
 
 /* Tables */
 .doc table {
-  border-collapse: collapse; width: 100%; margin: 0 0 1.3em;
-  font-size: 0.92rem; overflow: hidden;
+  /* block + max-width so wide tables scroll inside the column instead of spilling over the TOC rail */
+  display: block; width: max-content; max-width: 100%; overflow-x: auto;
+  border-collapse: collapse; margin: 0 0 1.3em;
+  font-size: 0.92rem;
   border: 1px solid var(--border); border-radius: var(--radius);
 }
 .doc thead th { background: var(--bg-subtle); }

@@ -11,6 +11,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Renamed the package from `mdxp` to `mdxplore` — npm rejected `mdxp` as too
   similar to the existing `md5` package. The installed command is now `mdxplore`.
 
+### Fixed
+- Wide tables no longer overflow the content column and overlap the "On this page"
+  rail; they now scroll horizontally within the column.
+
 ## [0.1.0] - 2026-07-16
 
 ### Added
